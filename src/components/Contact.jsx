@@ -18,8 +18,6 @@ const Contact = () => {
     const updateWindowDimensions = () => {
       const newy = window.scrollY;
       const multiplier = window.innerWidth < 640 ? 0.9 : 1 ;
-      console.log('newy : ', newy);
-      console.log(window.innerHeight)
       if(newy > Math.ceil((window.innerHeight * 2) * multiplier)) setInView(newy > Math.ceil((window.innerHeight * 2) * multiplier));
       if(newy < 1000 ) setInView(false);
     };
