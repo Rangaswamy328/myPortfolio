@@ -4,7 +4,6 @@ import emailjs from "@emailjs/browser";
 import EmailJSResponseStatus from "./EmailSuccessPopup.jsx"
 import EmailJSResponseError from "./EmailJSResponseError.jsx";
 import AnimatedText from "./AnimatedText.jsx";
-import {motion} from 'framer-motion'
 
 const Contact = () => {
   const form = useRef();
@@ -61,10 +60,10 @@ const Contact = () => {
     setUserName(e.target.user_name.value);
     emailjs
       .sendForm(
-        "service_wrz34yh",
-        "template_rd3tb9x",
+        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE,
+        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE,
         form.current,
-        "yAJBktu26a-WB5DcI"
+        process.env.NEXT_PUBLIC_EMAIL_JS_FORM
       )
       .then(
         (result) => {
