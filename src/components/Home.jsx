@@ -34,7 +34,7 @@ const Home = () => {
       id="home"
     >
       <div className="w-1/2 md:w-1/2 relative">
-        <Image src={profilePic} alt="profile" className="w-full h-auto" />
+        <Image src={profilePic} alt="profile" className="w-full h-auto" onContextMenu={(e)=>e.preventDefault()}/>
         <div className="absolute w-full h-[20%] z-20 left-1/2 bottom-0  bg-light transform -translate-x-1/2 lg:hidden"></div>
       </div>
       <div className="w-1/2 flex z-9 justify-center overflow-hidden lg:w-2/3 md:w-full">
