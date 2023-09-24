@@ -16,7 +16,7 @@ const Contact = () => {
   useEffect(() => {
     const updateWindowDimensions = () => {
       const newy = window.scrollY;
-      const multiplier = window.innerWidth < 640 ? 0.9 : 1 ;
+      const multiplier = window.innerWidth < 640 ? 1.2 : 1.3 ;
       if(newy > Math.ceil((window.innerHeight * 2) * multiplier)) setInView(newy > Math.ceil((window.innerHeight * 2) * multiplier));
       if(newy < 1000 ) setInView(false);
     };
@@ -114,7 +114,7 @@ const Contact = () => {
           </form>
         </div>
         <div className="w-1/2 h-full flex ml-6 justify-center items-center lg:w-[80%] lg:mb-[30px] md:w-full">
-          {inView && <AnimatedText text="Share your dream, we'll make it a breathtaking reality together" className="!text-5xl text-center lg:!text-4xl sm:text-sm xs:text-xs"/>}
+          {inView && <AnimatedText text="Share your dream, we'll make it a breathtaking reality together" className="!text-5xl text-center lg:!text-4xl sm:!text-2xl"/>}
         </div>
       </div>    
 

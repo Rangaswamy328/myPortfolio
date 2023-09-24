@@ -40,19 +40,18 @@ const NavBar = () => {
     return () => window.removeEventListener("resize", updateIsMidScreen) 
   },[])
 
-  console.log(isMidScreen , isSideBarOpen , isMidScreen,isMidScreen ? isSideBarOpen : isMidScreen);
   return (
     <>
-      <div className="hidden fixed w-[35px] p-5 pt-10 items-right justify-center sm:fixed sm:flex sm:flex-col sm:px-8" onClick={()=>{setIsSideBarOpen(!isSideBarOpen)}}>
-          <span className={`w-6 h-1 pr-5 block absolute bg-black rounded-sm ${isSideBarOpen? 'rotate-45 translate-y-1' : '-translate-y-1.5'}`}>&nbsp;</span>
-          <span className={`w-6 h-1 pr-5 block absolute bg-black rounded-sm ${isSideBarOpen? 'hidden' : 'opacity-100'}`}>&nbsp;</span>
-          <span className={`w-6 h-1 pr-5 block absolute bg-black rounded-sm ${isSideBarOpen? '-rotate-45 translate-y-1' : 'translate-y-1.5'}`}>&nbsp;</span>
+      <div className="hidden fixed w-full p-5 pt-10 z-10 items-right justify-center sm:fixed sm:flex sm:flex-col sm:px-8 backdrop-blur-md " onClick={()=>{setIsSideBarOpen(!isSideBarOpen)}}>
+          <span className={`w-5 h-1 pr-5 block absolute bg-black rounded-sm duration-500 ${isSideBarOpen? 'rotate-45 translate-y-1' : '-translate-y-1.5'}`}>&nbsp;</span>
+          <span className={`w-5 h-1 pr-5 block absolute bg-black rounded-sm duration-500 ${isSideBarOpen? 'opacity-0 left-0' : 'opacity-100 left-8'}`}>&nbsp;</span>
+          <span className={`w-5 h-1 pr-5 block absolute bg-black rounded-sm duration-500 ${isSideBarOpen? '-rotate-45 translate-y-1' : 'translate-y-1.5'}`}>&nbsp;</span>
       </div>
       {(isMidScreen ? isSideBarOpen : !isMidScreen) &&  <header
         className={`w-full px-32 py-8 z-10 font-medium flex justify-between items-center fixed backdrop-blur-md bg-opacity-50 bg-red lg:px-16 z-1 
         md:px-12 
-        sm:left-1/2 sm:top-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-[80%] sm:h-[85%] sm:flex-col sm:justify-center sm:backdrop-blur-lg sm:rounded sm:px-8`}
-      >
+        sm:left-1/2 sm:top-[52%] sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-[80%] sm:h-[85%] sm:flex-col sm:justify-center sm:backdrop-blur-lg sm:rounded sm:px-8`}
+       onClick={(e)=>{e.stopPropagation()}}>
         <nav>
           {navBarItems.map(({ dragTo, text }, ind) => (
             <CustomLink

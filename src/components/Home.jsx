@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import profilePic from "../public/images/developer-pic-1.png";
+import profilePic from "../public/images/developer-pic.png";
 import AnimatedText from "./AnimatedText";
 import { LinkArrow } from "./icons";
 import Image from "next/image";
@@ -30,11 +30,12 @@ const Home = () => {
 
   return (
     <section
-      className="flex items-center justify-between w-full my-20 bg-light about lg:my-35 md:flex-col "
+      className="flex items-center justify-between w-full my-20 bg-light about lg:my-35 md:flex-col md:gap-10"
       id="home"
     >
-      <div className="w-1/2 md:w-1/2">
+      <div className="w-1/2 md:w-1/2 relative">
         <Image src={profilePic} alt="profile" className="w-full h-auto" />
+        <div className="absolute w-full h-[20%] z-20 left-1/2 bottom-0  bg-light transform -translate-x-1/2 lg:hidden"></div>
       </div>
       <div className="w-1/2 flex z-9 justify-center overflow-hidden lg:w-2/3 md:w-full">
         {!isAboutVisible &&  <motion.div 
@@ -42,11 +43,11 @@ const Home = () => {
           className="aboutsec h-4/5 z-9 justify-center items-center lg:my-[45px]" >
             <AnimatedText
                 text={"Transforming Designs into Digital Masterpieces"}
-                className="!text-6xl lg:!text-5xl" />
+                className="!text-6xl lg:!text-5xl sm:!text-4xl" />
             <p className="my-4 text-base font-medium md:text-lg sm:text-base xs:text-sm">
                 As a proficient front-end developer, I'm committed to transforming
                 concepts into cutting-edge web experiences. Discover my recent
-                projects and insightful articles, demonstrating my mastery in
+                projects and contributions, demonstrating my mastery in
                 React.js and web development.
             </p>
             <div className="flex items-center">
