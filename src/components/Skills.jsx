@@ -14,7 +14,7 @@ const Skills = () => {
           </h2>
           <div className="relative flex justify-center items-center flex-wrap gap-10 w-[75%] mx-auto lg:w-[90%] md:w-full md:gap-9 md:items-start">
             {skills.map(({name,img},index)=>
-                <motion.div id={`${name} ${index}`} className="flex items-center justify-center"
+                <motion.div key={`${name} ${index}`} className="flex items-center justify-center"
                     initial={{opacity:0,y:100}}
                     whileInView={{opacity:1, y: 0}}
                     transition={{duration:1 + ( .1 * index ), staggerChildren:0.08,}} >
