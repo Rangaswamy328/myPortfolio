@@ -13,8 +13,6 @@ const About = ({className}) => {
   useEffect(() => {
     const controlYOE = animate(countYOE, yearOfExperience,{duration:1});
     const controlProj = animate(countProj, projectsCounts, {duration:1.8})
-
-
     return ()=>{
       controlYOE.stop;
       controlProj.stop;

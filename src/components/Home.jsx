@@ -45,7 +45,7 @@ const Home = () => {
                 text={"Transforming Designs into Digital Masterpieces"}
                 className="!text-6xl lg:!text-5xl sm:!text-4xl" />
             <p className="my-4 text-base font-medium md:text-lg sm:text-base xs:text-sm">
-                As a proficient front-end developer, I'm committed to transforming
+                As a proficient front-end developer, I&apos;m committed to transforming
                 concepts into cutting-edge web experiences. Discover my recent
                 projects and contributions, demonstrating my mastery in
                 React.js and web development.

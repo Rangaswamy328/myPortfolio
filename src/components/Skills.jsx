@@ -19,7 +19,7 @@ const Skills = () => {
                     whileInView={{opacity:1, y: 0}}
                     transition={{duration:1 + ( .1 * index ), staggerChildren:0.08,}} >
                     <div className="h-[35-px] w-[35px] ">
-                        <Image src={img} width={30} height={30} className="w-30 h-auto lg:w-25 md:w-20 sm:10"/>
+                        <Image src={img} alt={name} width={30} height={30} className="w-30 h-auto lg:w-25 md:w-20 sm:10"/>
                     </div>
                     <div className="pl-3 md:pl-2">
                         <p>{name}</p>
