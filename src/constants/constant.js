@@ -6,39 +6,33 @@ export const navBarItems = [
 ];
 
 export const aboutText = {
-  name:'Vinoth Kumar V',
-  p1:"Hello, I'm Vinoth Kumar V, a front-end developer enthusiastic about crafting visually appealing and user-focused digital solutions. With 2+ years of hands-on experience in the field, I'm constantly exploring fresh and inventive approaches to transform my clients concepts into reality.",
-  p2:"I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.",
-  p3:"I consistently bring my dedication to design excellence and user-centric philosophy to every project I undertake. I eagerly anticipate the chance to channel my skills and enthusiasm into your upcoming project.",
-  yearOfExperience:2,
-  projectsCounts:6,
+  name:'Kenche Ranga Swamy',
+  p1:"Hello, I'm Kenche Ranga Swamy, a Data Engineer with over 5.5 years of experience in designing and implementing robust data solutions. My expertise lies in leveraging technologies such as Spark, Scala, and Databricks to transform complex data into actionable insights.",
+  p2: "I believe that data engineering is not just about building pipelines; it's about enabling organizations to harness the power of their data. I am passionate about creating efficient and scalable data architectures that drive business value.",
+  p3: "With a strong background in AWS S3, CI/CD, Terraform, Hive, Hadoop, and Airflow, I consistently strive for excellence in every project. I am excited about the opportunity to apply my skills and passion for data engineering to your upcoming projects.",
+  yearOfExperience: 5.5,
+  projectsCounts: 8,
 }
 
 export const projects = [
-  {
-    projectName:'cal.com', 
-    codeLink:'https://github.com/VinoV1999/cal.com',
-    company:'cal.com', 
-    description:'Experienced problem solver who contributed to the growth and potential of Cal.com by resolving numerous issues. Leveraged expertise to improve functionality and enhance the platform. Committed to delivering impactful solutions that elevate user experiences.'
-  },
-  {
-    projectName:'Global Banking Platform', 
-    codeLink:'',
-    company:'TCS', 
-    description:'Created and implemented a web application that interacts with soap and  RESTful web service. Designed website’s screen, landing pages from concept through deployment.'
-  },
-  {
-    projectName:'Track My Day', 
-    codeLink:'https://github.com/VinoV1999/TrackMyDay',
-    company:'Self Project', 
-    description:'This app will help you to track your daily activities and will provide you with insights on how you are spending your time. It can help you to identify areas where you are wasting time and make changes to be more productive. This helped me to become more productive instead of spending on entertainment 6-8% a day.'
-  },
-  {
-    projectName:'Connect the Dots', 
-    codeLink:'https://github.com/VinoV1999/ConnectTheDots', 
-    company:'Self Project', 
-    description:'This is a simple Javascript dual player mobile  game where you have to connect the three dots to win the game. The game is played on a 2x2 grid and each player takes turns to place their coins (Red or Blue). The first player to drag and connect three of their coins in a row (horizontal, vertical or diagonal) wins the game'
-  },
+ {
+  projectName: 'Royal Bank of Canada',
+  codeLink: '', // Add a link to the code repository if available
+  company: 'TCS',
+  description: 'Designed and implemented scalable data pipelines for the Royal Bank of Canada, using Spark and Scala to process and analyze large volumes of financial data. Enhanced data integration processes with AWS S3 and Hive, ensuring data accuracy and accessibility. Collaborated with stakeholders to deliver actionable insights, driving improved decision-making and business outcomes.'
+},
+ {
+  projectName: 'CIGNA',
+  codeLink: '', // Add a link to the code repository if available
+  company: 'Concentrix',
+  description: 'Developed and optimized data pipelines for CIGNA, utilizing Spark and Scala to process large datasets. Integrated AWS S3 for data storage and implemented Airflow for orchestrating workflows, ensuring efficient data retrieval and processing. Collaborated with cross-functional teams to deliver insights that informed business decisions.'
+},
+{
+  projectName: 'Pricing in sales',
+  codeLink: 'https://github.com/VinoV1999/TrackMyDay',
+  company: 'Brita',
+  description: 'Developed a data-driven application to track daily activities and provide insights into time management. Leveraged data analytics to identify productivity patterns and areas for improvement. Implemented data pipelines using Spark and AWS S3 to process user activity data, enabling users to make informed decisions and enhance productivity by reducing time spent on non-essential activities.'
+},
 ]
 export const skills = [
   {name:'Next.js',
