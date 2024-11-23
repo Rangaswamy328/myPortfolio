@@ -29,7 +29,7 @@ export const projects = [
 },
 {
   projectName: 'Pricing in sales',
-  codeLink: 'https://github.com/VinoV1999/TrackMyDay',
+  codeLink: '',
   company: 'Brita',
   description: 'Developed a data-driven application to track daily activities and provide insights into time management. Leveraged data analytics to identify productivity patterns and areas for improvement. Implemented data pipelines using Spark and AWS S3 to process user activity data, enabling users to make informed decisions and enhance productivity by reducing time spent on non-essential activities.'
 },
